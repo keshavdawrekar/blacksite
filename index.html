@@ -1,0 +1,210 @@
+DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>keshav dawrekar</title>
+ <style>
+  html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: #6c63ff;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-top: 1rem;
+      border: 3px solid white;
+    }
+    nav {
+      background: #4b47cc;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hamburger button */
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      background: #6c63ff;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+      }
+      nav.open a {
+        opacity: 1;
+        max-height: 40px;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      nav a {
+        display: none;
+      }
+      nav.open a {
+        display: block;
+      }
+    }
+   form{
+     margin-left:15px;
+   }
+ </style>
+</head>
+
+<body>
+ <header>
+  <h1>keshav dawrekar</h1>
+  <p>Welcome to my black website 🌸</p>
+  <img src="profile.jpg.jpg" alt="keshav dawrekar">
+ </header>
+
+ <nav id="navbar">
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <a href="#about">About Me</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+ </nav>
+ <section id="about">
+  <div class="card">
+   <h2>About Me</h2>
+   <p>Hello! I’m <strong>keshav dawrekar</strong>. This is my personal space on the web where I share about myself, my interests, and the things I’m passionate about.</p>
+  </div>
+ </section>
+
+ <section id="skills">
+  <div class="card">
+   <h2>My Skills</h2>
+   <ul>
+    <li>Web Development</li>
+    <li>Creativity & hacking</li>
+    <li>Problem Solving</li>
+    <li>Learning New Technologies</li>
+   </ul>
+  </div>
+ </section>
+
+ <section id="contact">
+  <div class="card">
+   <h2>Contact Me</h2>
+   <p>Email: <a href="mailto:keshavdawrekar781@gmail.com">keshavdawre781@gmail.com</a></p>
+   <div class="social-links">
+    <p>Follow me on social media 🌐</p>
+    <a href="https://instagram.com/@_datboiiii_" target="_">📸 Instagram@_datboiiii_</a> |
+    <a href="https://linkedin.com/in/keshavdawrekar781.com" target="_blank">💼 LinkedIn keshavdawrekar781@gmail.com</a>
+   </div>
+  </div>
+ </section>
+ <footer>
+  <p>© 2025 keshav dawrekar  | All Rights Reserved</p>
+ </footer>
+
+ <script>
+  function toggleMenu() {
+      document.getElementById("navbar").classList.toggle("open");
+    }
+ </script>
+</body>
+
+</html>
+<section id="projects">
+ <div class="card">
+  <h2>My Projects</h2>
+  <ul>
+   <li><a href="#">🌐 Personal Portfolio Website</a></li>
+   <li><a href="#">📱 Mobile hacking</a></li>
+   <li><a href="#">💡 Creative UI Ideas</a></li>
+  </ul>
+ </div>
+</section>
+<section id="education">
+ <div class="card">
+  <h2>Education</h2>
+  <p>🎓 Bachelor of technology, form <strong>CDGI</strong> (2K25-2K29)</p>
+ </div>
+</section>
+<a href="keshav_dawrekar_Resume.pdf" download>
+ <p id="dmr">📄 Download My Resume</p>
+</a>
+<form id="form">
+ <label>Your Name:</label><br>
+ <input type="text" name="name" required><br><br>
+
+ <label>Your Email:</label><br>
+ <input type="email" name="email" required><br><br>
+
+ <label>Message:</label><br>
+ <textarea name="message" rows="4" required></textarea><br><br>
+
+ <button type="submit">Send Message</button>
+</form>
